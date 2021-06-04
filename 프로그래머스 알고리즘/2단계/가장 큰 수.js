@@ -1,7 +1,7 @@
 function solution(numbers) {
   const answer = numbers
     .map(number => number.toString())
-    // 숫자 2개를 문자열로 연결후 비교하여 내림차순 정렬
+    // 숫자 2개를 문자열로 연결후 비교해가며 내림차순 정렬
     .sort((a, b) => b + a - (a + b))
     .join('');
 
